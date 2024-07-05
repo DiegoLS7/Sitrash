@@ -1,0 +1,19 @@
+.main-menu ul li {
+    margin-bottom: 2px; 
+    margin-top: 14px;
+  }
+  
+  .main-menu ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .main-menu ul li i {
+    margin-right: 10px; 
+  }
+  
+  .logout {
+    margin-top: 35px; 
+  }
+  

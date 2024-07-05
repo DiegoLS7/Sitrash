@@ -1,0 +1,300 @@
+* 
+{
+    box-sizing: border-box;
+  }
+
+.titulo{
+    padding-top: 30px;
+    text-align: center; /* Centra el título */
+    font-family: 'Lora', sans-serif;
+}
+
+.titulo h2 {
+  font-weight: normal; /* Establece el peso de la fuente a negrita */
+  color: #333; /* Color del texto */
+  font-size: 36px; /* Tamaño de la fuente */
+}
+
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', sans-serif;
+  }
+  
+  body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  
+  .TablaSocios {
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 30px;
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns: 
+      minmax(80px, 0.6fr)
+      minmax(80px, 0.1fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.5fr)
+      minmax(80px, 0.6fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.5fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.2fr)
+      minmax(80px, 0.1fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.8fr)
+      minmax(80px, 0.8fr)
+      minmax(20px, 1.0fr);
+  }
+  
+  thead,
+  tbody,
+  tr {
+    display: contents;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  th {
+    position: sticky;
+    top: 0;
+    background: #6c7ae0;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.0rem;
+    color: white;
+  }
+  
+  th:last-child {
+    border: 0;
+  }
+  
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #808080;
+  }
+  
+  tr:nth-child(even) td {
+    background: #f8f6ff;
+  }
+
+  body{
+    text-align:center;
+  }
+
+  body:before{
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+  }
+
+  .checkbox-custom {
+    margin-left: 50px; /* Ajusta este valor según sea necesario */
+  }
+  .form-check-input {
+    margin-right: -20px; /* Mueve el checkbox hacia la derecha */
+  }
+  
+  
+  .form-check-label {
+  margin-right: 0px; /* Ajusta este valor según sea necesario */
+}
+
+  button{
+    background:#24e23e;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:50px;
+    font-size:0.8em;
+    padding:0 2em;
+    margin-right: 30px;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  .button:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  .button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  .button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto; /* Esto moverá el contenedor hacia la derecha */
+    padding-top: 90px;
+    width: 150px;
+    height: 50px;
+  }
+  
+  .container p, .container a {
+    display: inline-block; /* Hace que los elementos ocupen solo el espacio necesario y se puedan centrar */
+  }
+
+  .btn {
+    width: 35px;
+    height: 35px;
+    padding: 0; /* Elimina el relleno para que el tamaño sea exactamente 25x25px */
+    border: none;
+    cursor: pointer;
+    border-radius: 50%; /* Hace que los botones sean circulares */
+    margin-right: 2px; /* Ajusta el margen entre los botones según tus necesidades */
+  }
+  
+  .btn-editar {
+    background-color: #9370DB; /* Celeste/morado para el botón "Editar" */
+  }
+  
+  .btn-eliminar {
+    background-color: #FF69B4; /* Rojo/rosado para el botón "Eliminar" */
+  }
+  
+
+.Titulo {
+  text-align: center; /* Centra el texto */
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.modal-dialog {
+  max-width: 800px; /* Establece el ancho máximo del modal */
+  width: 40%; /* Establece el ancho del modal como el 80% del contenedor padre */
+}
+
+
+.socio-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.socio-info label {
+  padding-bottom: 15px; /* Ajusta el margen inferior del label */
+}
+
+.socio-info input[type="text"] {
+  margin-bottom: 10px; /* Ajusta el margen inferior del input */
+}
+
+.botonActualizar:hover {
+  background-color: skyblue; /* Slightly darker celeste on hover */
+}
+
+.botonActualizar {
+    width: 100px;  
+    height: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px; 
+    border-radius: 20%; 
+    margin-right: 15px; 
+    background-color: rgb(95, 131, 231);
+}
+
+.AgregarSocio {
+  float: right;
+  margin-right: 0px;
+  margin-top: 30px;
+  margin-bottom: 0px; 
+}
+
+.botonAgregarSocio{
+  width: 150px; 
+}
+
+.search {
+  display: center;
+  position: relative; /* Para posicionar el botón relativo a este contenedor */
+  margin-top: 70px;
+}
+
+.form-checkT,
+.form-checkA,
+.form-checkV {
+  margin-right: -55px; /* Ajusta la distancia horizontal entre los elementos según tus preferencias */
+  margin-top: 10px;
+}
+
+.checkbox-offset {
+  position: relative;
+  top: 8px;
+} 
+
+.search input[type="text"] {
+  margin-right: 15px; /* Espacio entre el input y el botón */
+  height: 35px;
+  width: 350px; 
+}
+
+.casillasA{
+  margin-left: 140px;
+}
+
+.casillas{
+  margin-left: 100px;
+}
+
+.botonBuscar {
+  background-color: #1E90FF; 
+  padding: 10px 20px; 
+  border: none; /* Quitamos el borde del botón */
+  cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+  position: absolute; /* Posicionamos el botón absolutamente */
+  padding-right: 25px; 
+}
+
+.botonActualizar.botonCeleste {
+  background-color: #1cacee /* Celeste color */
+}
+/* 5cacee */
+.botonActualizar.botonCeleste:hover {
+  background-color: #B3E6F0; /* Slightly darker celeste on hover */
+}
+
+
+.botonActualizar.botonRojoSuave {
+  background-color: #E74C3C; /* Reddish-soft color */
+}
+
+.botonActualizar.botonRojoSuave:hover {
+  background-color: #F59DA6; /* Slightly darker reddish-soft on hover */
+}
