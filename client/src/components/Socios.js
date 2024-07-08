@@ -593,7 +593,7 @@ function App() {
               </div>
             </FormGroup>
             <FormGroup className="col-md-4">
-              <Label for="mes_desc">Mes de Desct</Label>
+              <Label for="mes_desc">Mes Desct</Label>
               <Input
                 onChange={(event) => {
                   setMes_desc(event.target.value)
